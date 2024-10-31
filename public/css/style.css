@@ -1,5 +1,6 @@
-body,
-html {
+
+
+body, html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -7,7 +8,11 @@ html {
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
 h2,
 h3,
 h4 {
@@ -37,10 +42,15 @@ h5 {
 }
 p {
   font-size: 15px;
+  
+}
+.intro-p{
+  font-weight: 700;
 }
 p.intro {
   margin: 12px 0 0;
   line-height: 24px;
+  
 }
 a {
   color: #608dfd;
@@ -74,6 +84,7 @@ hr {
 #menu {
   padding: 15px;
   transition: all 0.8s;
+  
 }
 #menu.navbar-default {
   background-color: #fff;
@@ -162,12 +173,16 @@ hr {
 .section-title p {
   font-size: 18px;
 }
+.btn-custom-consulta{
+  background: linear-gradient(to right, #17181d 0%, #61686e 100%);
+  color:white;
+}
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #17181d 0%, #61686e 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -177,6 +192,9 @@ hr {
   transition: all 0.5s linear;
   border: 0;
 }
+.btn-custom-consulta:hover
+.btn-custom-consulta:focus,
+.btn-custo-consulta:active,
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom.focus,
@@ -184,7 +202,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #101217;
 }
 .btn:active,
 .btn.active {
@@ -216,7 +234,7 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -234,7 +252,7 @@ a:focus,
 .intro p {
   color: #fff;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 30px;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -257,7 +275,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #17181d 0%, #61686e 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -298,7 +316,7 @@ header .intro-text {
 }
 #about img {
   width: 520px;
-  margin-top: 10px;
+  margin-top: 5px;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
@@ -460,7 +478,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #17181d 0%, #61686e 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -486,7 +504,7 @@ header .intro-text {
 }
 #contact h3 {
   color: #fff;
-  margin-top: 80px;
+  margin-top: -10px;
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
@@ -504,7 +522,7 @@ header .intro-text {
   border: 2px solid #fff;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
+  color: #393a3b;
   background: #fff;
 }
 label {
@@ -585,11 +603,11 @@ label {
 }
 /* Footer Section*/
 #footer {
-  background: #f6f6f6;
+  background: linear-gradient(to right, #17181d 0%, #61686e 100%);
   padding: 30px 0;
 }
 #footer p {
-  color: #888;
+  color: white;
   font-size: 14px;
 }
 #footer a {
@@ -599,8 +617,47 @@ label {
   border-bottom: 2px solid #608dfd;
 }
 
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translateY(-50px);
+}
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+
 @media (max-width: 768px) {
+ 
+  .navbar-header{
+    max-width: 100%;
+  }
+ 
   #about img {
-    margin: 50px 0;
+    margin: 10px 0;
+    max-width:90%;
+  }
+
+  #about h2 {
+    font-size: 30px;
+  }
+  #about p{
+    max-width:90%;
+    text-align:justify;
+  }
+
+  .logo-footer{
+    max-width:80%;
+  }
+  #features {
+    max-width:100%;
+  }
+
+  #contact{
+    max-width:100%;
+  }
+
+  #contact h3 {
+    margin-top:30px;
   }
 }
+

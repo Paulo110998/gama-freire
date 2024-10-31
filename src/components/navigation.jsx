@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../img/logo-preta-flat.png"
 
 export const Navigation = (props) => {
   return (
@@ -17,8 +18,9 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
+          
+          <a className=" page-scroll" href="#page-top">
+            <img src={Logo} width={120} alt="" /> 
           </a>{" "}
         </div>
 
@@ -27,17 +29,18 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li>
+            
             <li>
               <a href="#about" className="page-scroll">
-                About
+                Como funciona?
               </a>
             </li>
             <li>
+              <a href="#features" className="page-scroll">
+                Fique informado
+              </a>
+            </li>
+            {/* <li>
               <a href="#services" className="page-scroll">
                 Services
               </a>
@@ -56,10 +59,10 @@ export const Navigation = (props) => {
               <a href="#team" className="page-scroll">
                 Team
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact" className="page-scroll">
-                Contact
+                Contato
               </a>
             </li>
           </ul>

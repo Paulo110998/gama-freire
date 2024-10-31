@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import Logo from "../img/logo-branca-flat.png"
 
 const initialState = {
   name: "",
@@ -15,14 +16,14 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
+
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
     emailjs
       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
       .then(
@@ -37,73 +38,21 @@ export const Contact = (props) => {
   };
   return (
     <div>
+      <br />
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
-            <div className="row">
-              <div className="section-title">
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
-              </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="form-control"
-                        placeholder="Name"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Message"
-                    required
-                    onChange={handleChange}
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
-                </button>
-              </form>
+          <div className="contact-item">
+            <div className="col-md-8">
+              <img class="logo-footer" src={Logo} width={520} />
             </div>
           </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
+
+          <div className="col-md-4 contact-info">
             <div className="contact-item">
-              <h3>Contact Info</h3>
+              <h3>Contato</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> Endereço
                 </span>
                 {props.data ? props.data.address : "loading"}
               </p>
@@ -111,7 +60,7 @@ export const Contact = (props) => {
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> Telefone
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
@@ -130,20 +79,31 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
+                    <a href="https://www.instagram.com/gamaefreire" target="blank">
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/gamaefreire/" target="blank">
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
+                    <a href="https://www.linkedin.com/company/gama-e-freire-advocacia/posts/?feedView=all">
+                      <i className="fa fa-linkedin"></i>
                     </a>
                   </li>
+
                   <li>
+                    <a href="https://api.whatsapp.com/send?phone=5582991023387">
+                      <i className="fa fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  {/* <li>
                     <a href={props.data ? props.data.youtube : "/"}>
                       <i className="fa fa-youtube"></i>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -153,10 +113,8 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2024 Copy by Gama & Freire Advocacia{" "}
+
           </p>
         </div>
       </div>

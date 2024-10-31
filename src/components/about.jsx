@@ -5,15 +5,15 @@ export const About = (props) => {
     <div id="about">
       <div className="container">
         <div className="row">
-          <div className="col-xs-12 col-md-6">
+          <div className="col-xs-12 col-md-7">
             {" "}
-            <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+            <img src="img/IMG_4146.jpg" className="img-responsive" alt="" />{" "}
           </div>
-          <div className="col-xs-12 col-md-6">
+          <div className="col-xs-12 col-md-5">
             <div className="about-text">
-              <h2>About Us</h2>
+              <h2>Sua marca segura, seu negócio pronto para crescer.</h2>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>Why Choose Us?</h3>
+              <h3>Por que nos escolher?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>

@@ -1,21 +1,21 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Gama & Freire",
+    "paragraph": "Tenha certeza e segurança antes de insistir. Consulte a disponibilidade da sua marca agora!"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Gama & Freire Advocacia é uma escolha confiável e sólida para quem busca proteção de marca com expertise jurídica e um atendimento de qualidade.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Consultoria para Registro de Marca",
+      "Proteção de Propriedade Intelectual",
+      "Renovação e Atualização de Registros",
+      "Atuação em Oposição e Defesa Administrativa"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Gestão de Portfólio de Marcas",
+      "Registro de Patentes e Desenhos Industriais",
+      "Acompanhamento e Atualização Jurídica",
+      "Representação em Litígios de Marcas"
     ]
   },
   "Gallery": [
@@ -152,33 +152,33 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "address": "Rua Hélio Pradines, 1055, Sala 5, Ponta Verde, Maceió, Brazil 57035220",
+    "phone": "+55 (82) 991023387",
+    "email": "gamaefreire@gmail.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-legal",
+      "title": "Proteção Legal",
+      "text": "O registro de marca confere ao proprietário o direito exclusivo de uso, protegendo sua identidade comercial e evitando que terceiros a utilizem sem autorização."
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Valorização da Marca",
+      "text": "Uma marca registrada agrega valor ao seu negócio, tornando-o mais atrativo para investidores e parceiros, além de facilitar a expansão e diversificação."
     },
     {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Prevenção de Conflitos",
+      "text": "O registro formaliza a sua marca, ajudando a evitar disputas judiciais e possíveis infrações, garantindo que sua marca não seja confundida com outras no mercado."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-solid fa-unlock",
+      "title": "Segurança",
+      "text": "Com a marca registrada, você pode licenciar ou franquear seu negócio com segurança, assegurando que seus direitos estão protegidos durante a expansão."
     }
   ]
 }
